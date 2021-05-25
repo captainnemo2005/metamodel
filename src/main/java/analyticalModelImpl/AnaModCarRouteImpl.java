@@ -36,7 +36,10 @@ public class AnaModCarRouteImpl implements AnaModCarRoute {
     @Override
     public double getCarRouteTravelTime(AnaModNetwork network, Tuple<Double, Double> TimeBin,
                                         Map<String, Double> anaParams, Map<String, Double> Params) {
-        return 0;
+        for(Id<Link> linkId : this.RouteLinks){
+            RouteTravelTime += ((AnaModLinkImpl) network.getLinks().get(linkId)).calLinkTravelTime(TimeBin,anaParams,Params);
+        }
+        return RouteTravelTime;
     }
 
     @Override
