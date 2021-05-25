@@ -1,0 +1,118 @@
+2021-05-25 09:51:39,463  WARN ControlerConfigGroup:364 setting overwriting behavior to overwriteExistingFiles
+2021-05-25 09:51:39,463  WARN ControlerConfigGroup:365 this is not recommended, as it might result in a directory containing output from several model runs
+2021-05-25 09:51:39,463  WARN ControlerConfigGroup:366 prefer the options deleteDirectoryIfExists or failIfDirectoryExists
+2021-05-25 09:51:40,082  WARN QueueWithBuffer:378 Link 100415_22116 too small: enlarge storage capacity from: 38.65466666666667 Vehicles to: 161.06111111111113 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,082  WARN QueueWithBuffer:378 Link 10047_22041 too small: enlarge storage capacity from: 26.666666666666668 Vehicles to: 400.0 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,084  WARN QueueWithBuffer:378 Link 10144_22071 too small: enlarge storage capacity from: 26.666666666666668 Vehicles to: 400.0 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,084  WARN QueueWithBuffer:378 Link 10151_22072 too small: enlarge storage capacity from: 26.666666666666668 Vehicles to: 400.0 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,084  WARN QueueWithBuffer:378 Link 10154_16846 too small: enlarge storage capacity from: 21.289333333333335 Vehicles to: 22.810000000000002 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,085  WARN QueueWithBuffer:378 Link 10154_16848 too small: enlarge storage capacity from: 2.8506666666666667 Vehicles to: 3.0542857142857134 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,085  WARN QueueWithBuffer:378 Link 10154_22716 too small: enlarge storage capacity from: 13.575999999999999 Vehicles to: 203.64 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,085  WARN QueueWithBuffer:378 Link 10162_22073 too small: enlarge storage capacity from: 26.666666666666668 Vehicles to: 400.0 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,086  WARN QueueWithBuffer:378 Link 102095_22117 too small: enlarge storage capacity from: 45.19866666666667 Vehicles to: 188.32777777777778 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,086  WARN QueueWithBuffer:378 Link 10240_22211 too small: enlarge storage capacity from: 17.604 Vehicles to: 264.06 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,086  WARN QueueWithBuffer:378 Link 10241_22211 too small: enlarge storage capacity from: 26.666666666666668 Vehicles to: 400.0 Vehicles.  This is not fatal, but modifies the traffic flow dynamics.
+2021-05-25 09:51:40,086  WARN QueueWithBuffer:381 Additional warnings of this type are suppressed.
+2021-05-25 09:51:40,233 ERROR BasicPlanAgentImpl:159 last activity of person driver agent id non_worker_1132_26-64_14379 has end time < infty; setting it to infty
+2021-05-25 09:51:40,233 ERROR BasicPlanAgentImpl:160  This message given only once.
+2021-05-25 09:51:40,494 ERROR SimStepParallelEventsManagerImpl$ExceptionHandler:420 Thread class org.matsim.core.events.SimStepParallelEventsManagerImpl$ProcessEventsRunnable0 died with exception while handling events.
+java.lang.IllegalArgumentException: acttype "o" is not known in utility parameters (module name="planCalcScore" in the config file).
+	at org.matsim.core.scoring.functions.CharyparNagelActivityScoring.calcActScore(CharyparNagelActivityScoring.java:87)
+	at org.matsim.core.scoring.functions.CharyparNagelActivityScoring.handleActivity(CharyparNagelActivityScoring.java:287)
+	at org.matsim.core.scoring.SumScoringFunction.handleActivity(SumScoringFunction.java:76)
+	at org.matsim.core.scoring.ScoringFunctionsForPopulation.handleActivity(ScoringFunctionsForPopulation.java:232)
+	at org.matsim.core.scoring.EventsToActivities.handleEvent(EventsToActivities.java:87)
+	at org.matsim.core.scoring.EventsToLegsAndActivities.handleEvent(EventsToLegsAndActivities.java:50)
+	at org.matsim.core.events.EventsManagerImpl.callHandlerFast(EventsManagerImpl.java:303)
+	at org.matsim.core.events.EventsManagerImpl.computeEvent(EventsManagerImpl.java:222)
+	at org.matsim.core.events.EventsManagerImpl.processEvent(EventsManagerImpl.java:136)
+	at org.matsim.core.events.SimStepParallelEventsManagerImpl$ProcessEventsRunnable.run(SimStepParallelEventsManagerImpl.java:330)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-05-25 09:51:40,534 ERROR AbstractController:208 Mobsim did not complete normally! afterMobsimListeners will be called anyway.
+java.lang.RuntimeException: Exception while processing events. Cannot guarantee that all events have been fully processed.
+	at org.matsim.core.events.SimStepParallelEventsManagerImpl.finishProcessing(SimStepParallelEventsManagerImpl.java:212)
+	at org.matsim.core.mobsim.qsim.QSim.cleanupSim(QSim.java:318)
+	at org.matsim.core.mobsim.qsim.QSim.run(QSim.java:244)
+	at org.matsim.core.controler.NewControler.runMobSim(NewControler.java:126)
+	at org.matsim.core.controler.AbstractController$8.run(AbstractController.java:197)
+	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
+	at org.matsim.core.controler.AbstractController.mobsim(AbstractController.java:193)
+	at org.matsim.core.controler.AbstractController.iteration(AbstractController.java:144)
+	at org.matsim.core.controler.AbstractController.doIterations(AbstractController.java:112)
+	at org.matsim.core.controler.AbstractController.access$100(AbstractController.java:28)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:80)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:48)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:31)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:240)
+	at Testing.main(Testing.java:28)
+Caused by: java.lang.IllegalArgumentException: acttype "o" is not known in utility parameters (module name="planCalcScore" in the config file).
+	at org.matsim.core.scoring.functions.CharyparNagelActivityScoring.calcActScore(CharyparNagelActivityScoring.java:87)
+	at org.matsim.core.scoring.functions.CharyparNagelActivityScoring.handleActivity(CharyparNagelActivityScoring.java:287)
+	at org.matsim.core.scoring.SumScoringFunction.handleActivity(SumScoringFunction.java:76)
+	at org.matsim.core.scoring.ScoringFunctionsForPopulation.handleActivity(ScoringFunctionsForPopulation.java:232)
+	at org.matsim.core.scoring.EventsToActivities.handleEvent(EventsToActivities.java:87)
+	at org.matsim.core.scoring.EventsToLegsAndActivities.handleEvent(EventsToLegsAndActivities.java:50)
+	at org.matsim.core.events.EventsManagerImpl.callHandlerFast(EventsManagerImpl.java:303)
+	at org.matsim.core.events.EventsManagerImpl.computeEvent(EventsManagerImpl.java:222)
+	at org.matsim.core.events.EventsManagerImpl.processEvent(EventsManagerImpl.java:136)
+	at org.matsim.core.events.SimStepParallelEventsManagerImpl$ProcessEventsRunnable.run(SimStepParallelEventsManagerImpl.java:330)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-05-25 09:51:40,536  WARN CharyparNagelActivityScoring:252 The first and the last activity do not have the same type. 
+2021-05-25 09:51:40,536  WARN CharyparNagelActivityScoring:253 Will score the first activity from midnight to its end, and the last activity from its start to midnight.
+2021-05-25 09:51:40,536  WARN CharyparNagelActivityScoring:254 Because of the nonlinear function, this is not the same as scoring from start to end.
+2021-05-25 09:51:40,536  WARN CharyparNagelActivityScoring:255 first activity: [type=home][coord=null][linkId=7016_7139][startTime=undefined][endTime=04:22:15][duration=undefined][facilityId=null]
+2021-05-25 09:51:40,536  WARN CharyparNagelActivityScoring:256 last activity: [type=work][coord=null][linkId=16847_7175][startTime=04:23:29][endTime=undefined][duration=undefined][facilityId=null]
+2021-05-25 09:51:40,536  WARN CharyparNagelActivityScoring:257 This may also happen when plans are not completed when the simulation ends.
+2021-05-25 09:51:40,536  WARN CharyparNagelActivityScoring:259 Additional warnings of this type are suppressed.
+2021-05-25 09:51:40,536 ERROR MatsimRuntimeModifications:54 Getting uncaught Exception in Thread main
+java.lang.IllegalArgumentException: acttype "home" is not known in utility parameters (module name="planCalcScore" in the config file).
+	at org.matsim.core.scoring.functions.CharyparNagelActivityScoring.calcActScore(CharyparNagelActivityScoring.java:87)
+	at org.matsim.core.scoring.functions.CharyparNagelActivityScoring.handleOvernightActivity(CharyparNagelActivityScoring.java:265)
+	at org.matsim.core.scoring.functions.CharyparNagelActivityScoring.handleLastActivity(CharyparNagelActivityScoring.java:293)
+	at org.matsim.core.scoring.SumScoringFunction.handleActivity(SumScoringFunction.java:80)
+	at org.matsim.core.scoring.ScoringFunctionsForPopulation.handleActivity(ScoringFunctionsForPopulation.java:232)
+	at org.matsim.core.scoring.EventsToActivities.finish(EventsToActivities.java:111)
+	at org.matsim.core.scoring.EventsToActivities$1.notifyAfterMobsim(EventsToActivities.java:72)
+	at org.matsim.core.controler.ControlerListenerManagerImpl.fireControlerAfterMobsimEvent(ControlerListenerManagerImpl.java:249)
+	at org.matsim.core.controler.AbstractController$9.run(AbstractController.java:221)
+	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
+	at org.matsim.core.controler.AbstractController.mobsim(AbstractController.java:217)
+	at org.matsim.core.controler.AbstractController.iteration(AbstractController.java:144)
+	at org.matsim.core.controler.AbstractController.doIterations(AbstractController.java:112)
+	at org.matsim.core.controler.AbstractController.access$100(AbstractController.java:28)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:80)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:48)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:31)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:240)
+	at Testing.main(Testing.java:28)
+2021-05-25 09:51:40,537 ERROR MatsimRuntimeModifications:60 ERROR --- This is an unexpected shutdown!
+2021-05-25 09:51:40,537 ERROR MatsimRuntimeModifications:63 Shutdown possibly caused by the following Exception:
+java.lang.IllegalArgumentException: acttype "home" is not known in utility parameters (module name="planCalcScore" in the config file).
+	at org.matsim.core.scoring.functions.CharyparNagelActivityScoring.calcActScore(CharyparNagelActivityScoring.java:87)
+	at org.matsim.core.scoring.functions.CharyparNagelActivityScoring.handleOvernightActivity(CharyparNagelActivityScoring.java:265)
+	at org.matsim.core.scoring.functions.CharyparNagelActivityScoring.handleLastActivity(CharyparNagelActivityScoring.java:293)
+	at org.matsim.core.scoring.SumScoringFunction.handleActivity(SumScoringFunction.java:80)
+	at org.matsim.core.scoring.ScoringFunctionsForPopulation.handleActivity(ScoringFunctionsForPopulation.java:232)
+	at org.matsim.core.scoring.EventsToActivities.finish(EventsToActivities.java:111)
+	at org.matsim.core.scoring.EventsToActivities$1.notifyAfterMobsim(EventsToActivities.java:72)
+	at org.matsim.core.controler.ControlerListenerManagerImpl.fireControlerAfterMobsimEvent(ControlerListenerManagerImpl.java:249)
+	at org.matsim.core.controler.AbstractController$9.run(AbstractController.java:221)
+	at org.matsim.core.controler.AbstractController.iterationStep(AbstractController.java:229)
+	at org.matsim.core.controler.AbstractController.mobsim(AbstractController.java:217)
+	at org.matsim.core.controler.AbstractController.iteration(AbstractController.java:144)
+	at org.matsim.core.controler.AbstractController.doIterations(AbstractController.java:112)
+	at org.matsim.core.controler.AbstractController.access$100(AbstractController.java:28)
+	at org.matsim.core.controler.AbstractController$1.run(AbstractController.java:80)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:48)
+	at org.matsim.core.controler.MatsimRuntimeModifications.run(MatsimRuntimeModifications.java:31)
+	at org.matsim.core.controler.AbstractController.run(AbstractController.java:88)
+	at org.matsim.core.controler.NewControler.run(NewControler.java:84)
+	at org.matsim.core.controler.Controler.run(Controler.java:240)
+	at Testing.main(Testing.java:28)
+2021-05-25 09:51:40,538 ERROR MatsimRuntimeModifications:78 ERROR --- MATSim unexpectedly terminated. Please check the output or the logfile with warnings and errors for hints.
+2021-05-25 09:51:40,538 ERROR MatsimRuntimeModifications:79 ERROR --- results should not be used for further analysis.
+2021-05-25 09:51:40,538 ERROR MatsimRuntimeModifications:83 ERROR --- This was an unexpected shutdown! See the log file for a possible reason.
