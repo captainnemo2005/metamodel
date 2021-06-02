@@ -29,15 +29,10 @@ public class Testing {
         Population pop = sc.getPopulation();
         TransitSchedule ts = sc.getTransitSchedule();
         Network net = sc.getNetwork();
-        ArrayList<Trip> trips;
+
         for(Person person: pop.getPersons().values()){
             AnaModTripChainImpl  tripChain = new AnaModTripChainImpl(person.getSelectedPlan(),sc,ts,net);
-            trips = tripChain.getTrips();
-            System.out.println(trips.size());
-            for(Trip trip : trips){
-                System.out.println(trip.getCarRoute().getCarRouteDistance());
-                System.out.println("////////////////////////////");
-            }
+
         }
 
     }
