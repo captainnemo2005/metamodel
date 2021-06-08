@@ -1,0 +1,9 @@
+bus,bus,-0.3
+bus,tram,-0.3
+bus,train,-0.2
+tram,bus,-0.3
+tram,tram,-0.2
+tram,train,-0.3
+train,bus,-0.2
+train,tram,-0.2
+train,train,-0.1

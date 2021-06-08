@@ -1,0 +1,21 @@
+Zone 1,Zone 1,-4.3
+Zone 1,Zone 2,-4.3
+Zone 1,Zone 3,-3.4
+Zone 1,Zone 4,-3.5
+Zone 1,FTZ,-4.3
+Zone 1,Regional,-3.5
+Zone 2,Zone 2,-2.94
+Zone 2,Zone 3,-3.4
+Zone 2,Zone 4,-3.5
+Zone 2,FTZ,-4.3
+Zone 2,Regional,-3.5
+Zone 3,Zone 3,-2.4
+Zone 3,Zone 4,-3.4
+Zone 3,Regional,-3.5
+Zone 3,FTZ,-3.4
+Zone 4,Zone 4,-2.4
+Zone 4,Regional,-3.5
+Zone 4,FTZ,-3.5
+Regional,Regional,-3.5
+Regional,FTZ,-3.5
+FTZ,FTZ,0
